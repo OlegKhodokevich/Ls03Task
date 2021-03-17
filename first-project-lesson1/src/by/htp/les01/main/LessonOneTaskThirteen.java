@@ -10,7 +10,7 @@ public class LessonOneTaskThirteen {
 		double f4;
 		Scanner sc = new Scanner(System.in);
 		
-    	System.out.println(" Enter a :");
+    	System.out.println(" Enter a :\n>");
 		while(!sc.hasNextInt()) {
 			sc.next();
 			System.out.println(" Enter a :");
@@ -20,13 +20,13 @@ public class LessonOneTaskThirteen {
 			System.out.println(" a = 0, f = NaN");	
 			return;
 		}
-		System.out.println(" Enter b :");
+		System.out.println(" Enter b :\n>");
 		while(!sc.hasNextInt()) {
 			sc.next();
 			System.out.println(" Enter b :");
 		}
 		b4 = sc.nextInt();
-		System.out.println(" Enter c :");
+		System.out.println(" Enter c :\n>");
 		while(!sc.hasNextInt()) {
 			sc.next();
 			System.out.println(" Enter c :");
@@ -34,7 +34,9 @@ public class LessonOneTaskThirteen {
 		c4 = sc.nextInt();		
 		f4 = (b4 + Math.sqrt(Math.pow(b4, 2)+ 4 * a4 * c4)) / (2 * a4) - Math.pow(a4, 3) * c4 + b4;
 		
-		System.out.println(" f4 = (b4 + Math.sqrt(Math.pow(b4, 2)+ 4 * a4 * c4)) / (2 * a4) - Math.pow(a4, 2) * c4 + b4 = " + f4);
+		
+		System.out.println(" a = " + a4 + "; b = " + b4 + "; c = " + c4);
+		System.out.printf(" f4 = (b4 + Math.sqrt(Math.pow(b4, 2)+ 4 * a4 * c4)) / (2 * a4) - Math.pow(a4, 2) * c4 + b4 = %.5f", f4);
 	}
 
 }
